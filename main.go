@@ -1,4 +1,4 @@
-package hello_goo
+package main
 
 import "fmt"
 
