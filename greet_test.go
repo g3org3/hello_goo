@@ -9,8 +9,9 @@ func TestHello(t *testing.T) {
 		want  string
 	}{
 		{name: "regular name", input: "George", want: "Hey, George!"},
+		{name: "lowercase name", input: "george", want: "Hey, George!"},
 		{name: "empty string", input: "", want: "Hey, !"},
-		{name: "with spaces", input: "Go Developer", want: "Hey, Go Developer!"},
+		{name: "with spaces", input: "go developer", want: "Hey, Go developer!"},
 	}
 
 	for _, tt := range tests {
